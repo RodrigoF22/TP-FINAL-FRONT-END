@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.formularioUsuario{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: 62vh;
+    gap: 1vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+    border: solid 1px #838da1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 #26334D;
+    /* position: relative; */
+}
+
+.formularioUsuario label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #586870;
+    margin: 0 10%;
+}
+
+.formularioUsuario input{
+    width: 80%;
+    height: 8%;
+    margin: 0 auto;
+    border: solid 1px #C0C6C9;
+    border-radius: 8px;
+}
+
+.formularioUsuario .inputMensaje{
+    height: 22%;
+}
+
+.formularioUsuario button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 10%;
+    width: 30%;
+    color: white;
+    background-color: #4A55A2;
+    align-self:self-end;
+    border: solid 1px #C0C6C9;
+    border-radius: 8px;
+    padding: 8px 20px;
+    cursor: pointer;
+    /* right: 0;
+    bottom: 0; */
+    /* position: absolute; */
+}
+
+.formularioUsuario h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #586870;
+    margin: 8% 10% 0 10%;
+    font-size: 16px;
+}    

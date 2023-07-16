@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+.productCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Roboto', sans-serif;
+    border: solid 1px #838da1;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 2px 5px 0 #26334D;
+    background-color: white;
+    padding: 10px 0;
+}
+
+.linkProductDetail{
+    text-decoration: none;
+    background-color: white;
+    color: rgb(77, 94, 128);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
