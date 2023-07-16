@@ -110,31 +110,46 @@ const ContextProvider = ({children}) => {
         setFormUserData({nombre:'',
         email:'',
         mensaje:''})
-      }
+    }
     
     const handleChangeRegisterUser = (evento) =>{
         console.log(evento.target.value)
         console.log(formUserData)
         setFormUserData({...formUserData, [evento.target.name]:evento.target.value})
-      }
+    }
     
-      const getProductById = (id) => {
+    const getProductById = (id) => {
         return products.find(producto => producto.id === Number(id))
-      }
+    }
 
-      const [cart, setCart] = useState([])
-      const isInCart = (id) => cart.some((producto) => producto.id === Number(id))
+    const getProductCartById = (id) =>{
+        return cart.find(producto => producto.id === Number(id)) 
+    }
 
-      const addProductCart = (id, quantity) => {
+    const [cart, setCart] = useState([])
+    const isInCart = (id) => cart.some((producto) => producto.id === Number(id))
+
+    const addProductCart = (id, quantity) => {
         if(isInCart(id)){
-            return console.log('El producto ya está agregado')
+            setCart(cart.map((producto) => {
+                if(producto.id == id){
+                    producto.quantity = quantity
+                }
+                return producto
+            }))
         }else{
             return setCart([...cart, {...getProductById(id), quantity : quantity}])
         }
-      }
+    }
+
+    const getTotal = () => {
+        let total = 0;
+        cart.forEach((producto) => total += producto.precio * producto.quantity)
+        return total
+    }
 
   return (
-    <Context.Provider value={{products, formUserData, handleRegisterUser, handleChangeRegisterUser, getProductById, cart, addProductCart, isInCart}}>
+    <Context.Provider value={{products, formUserData, handleRegisterUser, handleChangeRegisterUser, getProductById, cart, addProductCart, isInCart, getProductCartById, getTotal}}>
         {children}
     </Context.Provider>
   )

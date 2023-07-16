@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useParams } from 'react-router-dom'
 import { useCustomContext } from '../../ContextManager/ContextProvider'
 import { Counter } from '../../Components'
@@ -8,8 +8,8 @@ const DetailPage = () => {
     const {id} = useParams()
     console.log(id)
 
-    const {getProductById, addProductCart} = useCustomContext()
-    const productDetail = getProductById(id)
+    const {getProductById, isInCart, getProductCartById} = useCustomContext()
+    const [productDetail, setProductDetail] = useState(isInCart(id) ? getProductCartById(id): getProductById(id))
 
   return (
     <div className='detailPage-container'>
@@ -20,7 +20,14 @@ const DetailPage = () => {
             <h3 style={{fontSize:'12px', backgroundColor: 'white'}}>${productDetail.precio}</h3>
         </div>
         <p>{productDetail.descripcion}</p>
-        <Counter initialValue={1} stock={productDetail.stock} id={productDetail.id}/>
+
+        {
+          isInCart(id)
+          ?
+          <Counter initialValue={productDetail.quantity} stock={productDetail.stock} id = {productDetail.id}/>
+          :
+          <Counter initialValue={1} stock={productDetail.stock} id = {productDetail.id}/>
+        }
     </div>
   )
 }
