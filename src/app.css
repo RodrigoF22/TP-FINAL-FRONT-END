@@ -30,3 +30,33 @@
     color: #6B7A99;
 }
 
+
+
+.navBar .input input{
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 #EDEFF2;
+    border: solid 1px rgb(228, 232, 240);
+    height: 5vh;
+    width: 30vw;
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 500px){
+    .navBar-links{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .navBar-links-handlens{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .input{
+        display: none;
+    }
+}
+

@@ -10,11 +10,13 @@ const HomePage = () => {
 
   return (
     <>
-    <div className='productCard-container'>
+    <div className='container'>
         <h1>Apple Store</h1>
-        {products.map ((producto) => 
-            <ProductCard producto = {producto} key = {producto.id}/>
-        )}
+        <div className='productCard-container'>
+          {products.map ((producto) => 
+              <ProductCard producto = {producto} key = {producto.id}/>
+          )}
+        </div>
     </div>
 
     <Footer/>

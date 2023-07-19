@@ -7,10 +7,10 @@
     align-items: center;
     gap: 15px;
     font-family: 'Roboto', sans-serif;
-    border: solid 1px #838da1;
+    border: solid 1px white;
     border-radius: 10px;
-    width: 80%;
-    box-shadow: 0 2px 5px 0 #26334D;
+    width: 80vw;
+    box-shadow: 0 0 4px 0 #26334D;
     background-color: white;
     padding: 10px 0;
 }
@@ -23,3 +23,22 @@
     font-size: 16px;
 }
 
+
+@media screen and (min-width: 400px){
+    .productCard{
+        width: 70vw;
+    }
+}
+
+
+@media screen and (min-width: 500px){
+    .productCard{
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .productCard{
+        width: 40vw;
+    }
+}

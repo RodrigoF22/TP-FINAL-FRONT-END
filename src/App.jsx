@@ -15,10 +15,14 @@ const App = () => {
       <div>
         <nav className='navBar'>
           <img src={logo}/>
+          <div className='input'>
+            <input type="text" placeholder='Search goods...' />
+            <img src={handlens}/>
+          </div>
           <div className='navBar-links'>
             <NavLink to = '/contact' className='navBar-links-contact'>Contact</NavLink>
             <NavLink to = '/'><img src={house}/></NavLink>
-            <NavLink to = '/searchgoods'><img src={handlens}/></NavLink>
+            <NavLink to = '/searchgoods' className={'navBar-links-handlens'}><img src={handlens}/></NavLink>
             <NavLink to = '/cart'><img src={cart}/></NavLink>
           </div>
         </nav>

@@ -19,6 +19,12 @@
     gap: 20px;
 }
 
+.footer-block-1 h3{
+    font-size: 14px;
+    color: #4D5E80;
+    font-weight: 700;
+}
+
 .footer-block-2{
     display: flex;
     gap: 20px;
@@ -30,7 +36,7 @@
     gap: 15px;
     font-family: 'Roboto', sans-serif ;
     color: #6B7A99;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .footer-block-2 ul li{
@@ -43,8 +49,22 @@
     gap: 15px;
     font-family: 'Roboto', sans-serif ;
     color: #ADB8CC;
-    font-size: 12px;
+    font-size: 10px;
 }
 
+
+@media screen and (min-width: 600px){
+    .footer-container{
+        padding: 35px 55px;
+    }
+    .footer-block{
+        flex-direction: row;
+        gap: 55px;
+    }
+    .footer-block-1{
+        flex-direction: column;
+        align-items: normal;
+    }
+}
 
 
