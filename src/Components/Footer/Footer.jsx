@@ -8,7 +8,7 @@ const Footer = () => {
             <div className='footer-block'>
                 <div className='footer-block-1'>
                     <h3 /* style={{color: '#4D5E80', fontSize: '18px', fontWeight: '700'}} */>Constructor</h3>
-                    <p style={{color: '#ADB8CC', fontSize: '10px', fontWeight: '700'}}>12 Water St. Vancouver, BC V6B<br/>132 United States</p>
+                    <p /* style={{color: '#ADB8CC', fontSize: '10px', fontWeight: '700'}} */>12 Water St. Vancouver, BC V6B<br/>132 United States</p>
                 </div>
                 
                 <div className='footer-block-2'>

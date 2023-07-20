@@ -31,14 +31,25 @@
 }
 
 
-
 .navBar .input input{
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 4px 0 #EDEFF2;
     border: solid 1px rgb(228, 232, 240);
-    height: 5vh;
-    width: 30vw;
-    padding: 10px;
+    height: 6vh;
+    width: 45vw;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #6B7A99;
+}
+
+.navBar .input{
+    position: relative;
+}
+
+.navBar .input img{
+    position: absolute;
+    right: 5%;
+    top: 25%;
 }
 
 
@@ -60,3 +71,48 @@
     }
 }
 
+@media screen and (min-width: 900px){
+    .navBar-links{
+        font-size: 18px;
+    }
+    .navBar .input input{
+        font-size: 17px;
+    }
+    .item img{
+        width: 27px;
+    }
+    .navBar .logo{
+        width: 35px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .navBar-links{
+        font-size: 18px;
+    }
+    .navBar .input input{
+        font-size: 17px;
+    }
+    .item img{
+        width: 27px;
+    }
+    .navBar .logo{
+        width: 35px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .navBar-links{
+        font-size: 22px;
+        gap: 22px;
+    }
+    .navBar .input input{
+        font-size: 19px;
+    }
+    .item img{
+        width: 32px;
+    }
+    .navBar .logo{
+        width: 40px;
+    }
+}

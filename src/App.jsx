@@ -14,16 +14,16 @@ const App = () => {
     <>
       <div>
         <nav className='navBar'>
-          <img src={logo}/>
+          <img className='logo' src={logo}/>
           <div className='input'>
             <input type="text" placeholder='Search goods...' />
             <img src={handlens}/>
           </div>
           <div className='navBar-links'>
             <NavLink to = '/contact' className='navBar-links-contact'>Contact</NavLink>
-            <NavLink to = '/'><img src={house}/></NavLink>
+            <NavLink to = '/' className='item'><img src={house}/></NavLink>
             <NavLink to = '/searchgoods' className={'navBar-links-handlens'}><img src={handlens}/></NavLink>
-            <NavLink to = '/cart'><img src={cart}/></NavLink>
+            <NavLink to = '/cart' className='item'><img src={cart}/></NavLink>
           </div>
         </nav>
         <Routes>

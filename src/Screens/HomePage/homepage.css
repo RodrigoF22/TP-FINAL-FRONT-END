@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@500&display=swap');
 
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f5fa;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -46,5 +53,24 @@ h1{
         flex-direction: row;
         align-items: normal;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 900px){
+    h1{
+        width: 74.45vw;
+    }
+}
+
+@media screen and (min-width: 900px){
+    h1{
+        width: 74.45vw;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+        width: 94vw;
+        font-size: 28px;
     }
 }
