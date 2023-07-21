@@ -19,3 +19,14 @@
     justify-content: center;
 }
 
+.cartEmpty{
+    color: #4D5E80;
+    margin: 5vh auto;
+}
+
+@media screen and (min-width: 600px){
+    .cartEmpty{
+        font-size: 28px;
+    }
+}
+

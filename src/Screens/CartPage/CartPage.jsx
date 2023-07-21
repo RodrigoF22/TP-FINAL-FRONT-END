@@ -25,7 +25,7 @@ const CartPage = () => {
           </div>
         </>
         :
-        <h2>No has comprado nada aun</h2>
+        <h2 className='cartEmpty'>No has comprado nada aún</h2>
       } 
     </div>
   )

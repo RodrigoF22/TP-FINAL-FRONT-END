@@ -7,6 +7,10 @@ const Counter = ({initialValue, stock, id}) => {
     const {addProductCart} = useCustomContext()
     const [quantity, setQuantity] = useState(initialValue)
 
+    /* const onClickAddProductCart = () =>{
+        addProductCart(id,quantity)
+    } */
+    
     return (
     <>
         <div className='counter'>
