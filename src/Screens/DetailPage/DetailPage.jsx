@@ -16,8 +16,8 @@ const DetailPage = () => {
         <h1>Apple Store</h1>
         <div className='detailPage-block'>
             <div style={{backgroundColor:'white'}}>{productDetail.imagen}</div>
-            <h2 style={{fontSize:'14px', backgroundColor: 'white'}}>{productDetail.name}</h2>
-            <h3 style={{fontSize:'12px', backgroundColor: 'white'}}>${productDetail.precio}</h3>
+            <h3>{productDetail.name}</h3>
+            <span>${productDetail.precio}</span>
         </div>
         <p>{productDetail.descripcion}</p>
 
@@ -33,3 +33,4 @@ const DetailPage = () => {
 }
 
 export default DetailPage
+

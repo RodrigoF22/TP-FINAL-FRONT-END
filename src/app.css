@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #f2f5fa;
-    /* background-color: #dfe2ec; */
 }
 
 
@@ -15,8 +14,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 35px;
-    /* border-bottom: 2px solid #EDEFF2; */
-    border-bottom: 2px solid #d5e0f0;
+    border-bottom: 2px solid #EDEFF2;
 }
 
 .navBar-links{
@@ -28,11 +26,19 @@
     font-size: 14px;
 }
 
+
 .navBar-links-contact{
     text-decoration: none;
     color: #6B7A99;
 }
 
+.navBar-links-contact:hover{
+    transform: scale(1.2);
+ }
+
+.navBar-links img:hover{
+    transform: scale(1.2);
+ }
 
 .navBar .input input{
     border-radius: 20px;
@@ -43,6 +49,10 @@
     padding: 10px 20px;
     font-size: 14px;
     color: #6B7A99;
+}
+
+.navBar .input input:focus{
+    outline: none;
 }
 
 .navBar .input{
@@ -79,13 +89,17 @@
         font-size: 18px;
     }
     .navBar .input input{
-        font-size: 17px;
+        font-size: 16px;
+        width: 35vw;
     }
     .item img{
         width: 27px;
     }
     .navBar .logo{
         width: 35px;
+    }
+    .navBar .input img{
+        height: 50%;
     }
 }
 
@@ -96,12 +110,28 @@
         gap: 22px;
     }
     .navBar .input input{
-        font-size: 19px;
+        font-size: 18px;
     }
     .item img{
         width: 32px;
     }
     .navBar .logo{
         width: 40px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .navBar-links{
+        font-size: 26px;
+        gap: 24px;
+    }
+    .navBar .input input{
+        font-size: 20px;
+    }
+    .item img{
+        width: 36px;
+    }
+    .navBar .logo{
+        width: 44px;
     }
 }

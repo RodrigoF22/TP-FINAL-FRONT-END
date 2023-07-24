@@ -10,3 +10,23 @@
     background-color: white;
     padding: 10px 0;
 }
+
+.ProductCardCartContainer h3{
+    background-color: white;
+    color: #4D5E80 ;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.ProductCardCartContainer span{
+    background-color: white;
+    color: #6B7A99;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.ProductCardCartContainer p{
+    background-color: white;
+    color: rgb(77, 94, 128);
+    font-size: 14px;
+}

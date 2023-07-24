@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 20px;
 }
 
 .cartContainer-block-1{
@@ -14,9 +15,23 @@
     gap: 40px;
 }
 
+.cartContainer-block-1 h2{
+    color: #4D5E80;
+    margin-top: 3vh;
+    font-size: 24px;
+    width: 80%;
+}
+
+
 .cartContainer-block-2{
     display: flex;
     justify-content: center;
+}
+
+.cartContainer-block-2 span{
+    color: #4D5E80;
+    font-size: 14px;
+    width: 80%;
 }
 
 .cartEmpty{
@@ -29,4 +44,76 @@
         font-size: 28px;
     }
 }
+
+@media screen and (min-width: 500px){
+    .ProductCardCartContainer{
+        width: 55%;
+    }
+    .cartContainer-block-1 h2{
+        width: 55%;
+    }
+    .cartContainer-block-2 span{
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .ProductCardCartContainer{
+        width: 45%;
+    }
+    .cartContainer-block-1 h2{
+        width: 45%;
+    }
+    .cartContainer-block-2 span{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .ProductCardCartContainer{
+        width: 35%;
+    }
+    .cartContainer .cartContainer-block-1 h2{
+        width: 35%;
+    }
+    .cartContainer-block-2 span{
+        width: 35%;
+        font-size: 17px;
+    }
+    .cartContainer-block-1 h2{
+        font-size: 28px;
+    }
+    .ProductCardCartContainer img{
+        width: 10vw;
+    }
+    .ProductCardCartContainer h3{
+        font-size: 20px;
+    }
+    .ProductCardCartContainer span{
+        font-size: 18px;
+    }
+    .ProductCardCartContainer p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .cartContainer-block-1 h2{
+        font-size: 35px;
+    }
+    .ProductCardCartContainer h3{
+        font-size: 22px;
+    }
+    .ProductCardCartContainer span{
+        font-size: 20px;
+    }
+    .ProductCardCartContainer p{
+        font-size: 18px;
+    }
+    .cartContainer-block-2 span{
+        font-size: 22px;
+    }
+}
+
+
 

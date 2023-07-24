@@ -41,7 +41,7 @@ const ContextProvider = ({children}) => {
             imagen: <img style={{backgroundColor:'white'}} src={samsunggalaxys10}/>,
             stock: 10,
             id: 3,
-            descripcion:'Al igual que el Galaxy S10, el Samsung Galaxy S10+ viene con un potente chip Snapdragon 855, una construcción de vidrio y metal y un lector de huellas digitales integrado en la pantalla. Sin embargo, es más grande, lo que significa que obtienes una pantalla OLED más grande de 6.4 pulgadas y una batería más grande de 4100 mAh que dura más entre cargas. El teléfono se puede tener con hasta 1 TB de almacenamiento integrado y 12 GB de RAM. El sistema de cámara es idéntico, ya que combina una cámara principal de 12 MP con doble apertura, una cámara de teleobjetivo con zoom 2x y una cámara súper gran angular para tomas épicas. En la parte frontal, la pantalla curva se extiende de un borde a otro, interrumpida solo por un corte ovalado para la cámara frontal dual de 10 MP con enfoque automático y grabación de vídeo 4K.'
+            descripcion:'Al igual que el Galaxy S10, el Samsung Galaxy S10+ viene con un potente chip Snapdragon 855, una construcción de vidrio y metal y un lector de huellas digitales integrado en la pantalla. Sin embargo, es más grande, lo que significa que obtienes una pantalla OLED más grande de 6.4 pulgadas y una batería más grande de 4100 mAh que dura más entre cargas.'
         },
 
         {

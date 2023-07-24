@@ -101,6 +101,7 @@
 @media screen and (min-width: 1200px){
     .footer-container{
         padding: 40px 0;
+        width: 93vw;
     }
     .footer-block{
         gap: 100px;
@@ -109,20 +110,20 @@
         gap: 40px;
     }
     .footer-block-2 ul{
-        font-size: 18px;
+        font-size: 16px;
     }
     .footer-block-3{
-        font-size: 17px;
+        font-size: 15px;
     }
     .footer-block-1 h3{
-        font-size: 21px;
+        font-size: 19px;
     }
     .footer-block-1 p{
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1400px){
     .footer-block{
         gap: 140px;
     }
@@ -136,3 +137,4 @@
         gap: 30px;
     }
 }
+
