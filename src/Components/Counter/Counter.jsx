@@ -7,9 +7,10 @@ const Counter = ({initialValue, stock, id}) => {
     const {addProductCart} = useCustomContext()
     const [quantity, setQuantity] = useState(initialValue)
 
-    /* const onClickAddProductCart = () =>{
+    const onClickAddProductCart = () =>{
         addProductCart(id,quantity)
-    } */
+        alert('¡Se ha agregado un producto al carrito!')
+    }
     
     return (
     <>
@@ -18,7 +19,7 @@ const Counter = ({initialValue, stock, id}) => {
             <button className='buttonCounterQuantity'>{quantity}</button>
             <button className='buttonCounter' onClick={() => setQuantity(quantity === stock ? quantity : quantity + 1)}>+</button>
         </div>
-        <button className = 'addToCartButton' onClick={() => addProductCart(id,quantity)}>Add to cart</button>
+        <button className = 'addToCartButton' onClick={onClickAddProductCart}>Add to cart</button>
     </>
   )
 }
