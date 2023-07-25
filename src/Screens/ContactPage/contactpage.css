@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-/* 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f2f5fa;
-} */
+
 
 .formularioUsuario{
     display: flex;
@@ -15,11 +9,9 @@
     gap: 2vh;
     margin: 0 auto;
     margin-top: 3vh;
-    /* margin-bottom: 5vh; */
     border: solid 1px #838da1;
     border-radius: 10px;
     box-shadow: 0 2px 5px 0 #26334D;
-    /* position: relative; */
 }
 
 .formularioUsuario label{

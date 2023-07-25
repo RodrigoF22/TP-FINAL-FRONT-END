@@ -7,7 +7,6 @@ const HomePage = () => {
     
     const {products} = useCustomContext() //Traigo mi array desde el contexto creado
    
-
   return (
     <>
     <div className='container'>

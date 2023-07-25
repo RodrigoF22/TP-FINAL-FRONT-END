@@ -148,8 +148,12 @@ const ContextProvider = ({children}) => {
         return total
     }
 
+    const removeCart = () => {
+        return setCart([])
+    }
+
   return (
-    <Context.Provider value={{products, formUserData, handleRegisterUser, handleChangeRegisterUser, getProductById, cart, addProductCart, isInCart, getProductCartById, getTotal}}>
+    <Context.Provider value={{products, formUserData, handleRegisterUser, handleChangeRegisterUser, getProductById, cart, addProductCart, isInCart, getProductCartById, getTotal, removeCart}}>
         {children}
     </Context.Provider>
   )

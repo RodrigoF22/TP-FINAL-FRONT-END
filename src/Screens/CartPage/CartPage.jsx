@@ -5,8 +5,13 @@ import './cartpage.css'
 
 const CartPage = () => {
   
-  const {cart, getTotal} = useCustomContext()
+  const {cart, getTotal, removeCart} = useCustomContext()
   console.log(getTotal())
+
+  const onClickBuy = () =>{
+    removeCart()
+    alert('Tu compra ha sido realizada con éxito')
+}
 
   return (
     <div className='cartContainer'>
@@ -18,6 +23,7 @@ const CartPage = () => {
             {cart.map((producto) =>{
               return <ProductCardCart producto={producto} key={producto.id}/>
             })}
+            <button className = 'addToCartButton' onClick={onClickBuy}>Buy</button>
           </div>
 
           <div className='cartContainer-block-2'>

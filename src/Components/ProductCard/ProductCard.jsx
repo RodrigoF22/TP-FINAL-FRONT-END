@@ -9,7 +9,7 @@ const ProductCard = ({producto}) => {
         <span className='category'>{producto.categoria}</span>
         <h2>{producto.name}</h2>
         <span className='price'>${producto.precio}</span>
-        <Link to={'/detail/' + producto.id} className='linkProductDetail'>Ver detalle</Link> 
+        <Link to={'/detail/' + producto.id} className='linkProductDetail'>Show details</Link> 
     </div> 
   )
 }
