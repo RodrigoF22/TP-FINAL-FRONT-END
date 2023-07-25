@@ -3,6 +3,7 @@ El trabajo consiste en un e-commerce en el que se visualizan distintos productos
 - Se puede visualizar el detalle de cada uno de los productos
 - Se pueden agregar productos al carrito de compras y confirmar la transacción
 - Se puede acceder a un formulario para realizar cualquier tipo de consulta
+
 El programa está compuesto por cuatro screens:
 -HomePage: página principal, donde aparecen los distintos productos que se pueden adquirir
 -ContactPage: página de contacto, donde se visualiza el formulario
