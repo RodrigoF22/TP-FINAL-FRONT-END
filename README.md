@@ -5,10 +5,10 @@ El trabajo consiste en un e-commerce en el que se visualizan distintos productos
 - Se puede acceder a un formulario para realizar cualquier tipo de consulta
 
 El programa está compuesto por cuatro screens:
--HomePage: página principal, donde aparecen los distintos productos que se pueden adquirir
--ContactPage: página de contacto, donde se visualiza el formulario
--DetailPage: es la página en la que se pueden visualizar los detalles de los productos
--CartPage: página del carrito de compras, en la que se pueden ver los productos agregados y confirmar la compra
+- HomePage: página principal, donde aparecen los distintos productos que se pueden adquirir
+- ContactPage: página de contacto, donde se visualiza el formulario
+- DetailPage: es la página en la que se pueden visualizar los detalles de los productos
+- CartPage: página del carrito de compras, en la que se pueden ver los productos agregados y confirmar la compra
 
 Por otro lado, los componentes que integran el programa son:
 - Main.jsx: componente principal
